@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, defineProps, watchEffect } from 'vue';
-import { DishesData } from '../assets/data/data'
 
 const emits = defineEmits(['send-data','back']);
 const props = defineProps({

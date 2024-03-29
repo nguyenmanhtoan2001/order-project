@@ -16,7 +16,7 @@ const props = defineProps({
 });
 let raw: any = ref();
 let listDish: any = ref();
-let record = reactive({
+let record:any = reactive({
   restaurant: props.restaurantData?.restaurant,
   meal: props.restaurantData?.meal,
   numberOfPeople: props.restaurantData?.numberOfPeople,
@@ -31,7 +31,7 @@ const next = () =>{
   record.totalDish = dynamicValidateForm.totalDish
   formRef.value?.validate()
     .then(() => {
-      const totalNumberOfDishes = record.totalDish.reduce((total, dish) => {
+      const totalNumberOfDishes = record.totalDish.reduce((total:any, dish:any) => {
         if (dish.noOfServings) {
           return total + dish.noOfServings;
         } else {

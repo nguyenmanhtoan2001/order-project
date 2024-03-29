@@ -11,7 +11,7 @@ const emits = defineEmits(['send-data']);
 
 const formRef = ref<FormInstance>();
 
-let formState = reactive({
+let formState:any = reactive({
   meal: undefined,
   numberOfPeople: 1,
 });

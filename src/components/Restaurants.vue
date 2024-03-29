@@ -10,7 +10,7 @@ const props = defineProps({
   restaurantData: Object
 });
 const listRestaurant: any = ref();
-let formState = reactive({
+let formState:any = reactive({
   restaurant: undefined,
   meal: props.mealData?.meal,
   numberOfPeople: props.mealData?.numberOfPeople
